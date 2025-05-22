@@ -1,0 +1,19 @@
+Lucas Feliciano, Brandon Reinoso, Dennis Dong and Jennifer Muy 
+
+CIS 2300 
+
+Professor Jairam 
+
+May 20, 2025 
+
+Question 2 two page review  
+
+This project intended to scrape data from a classic American film list and an existing one online from a newly created source. This project revolved around the American Film Institute's (AFI) "100 Years...100 Movies" list; therefore, I sought to take an abbreviated approach learned from one online source and add interesting data of my own from genres, directors, ratings, and box office gross to create a more extensive dataset that could yield more information about these cherished films than just an abbreviated approach online could render. 
+
+The two most prominent techniques used were web scraping and API calling. First, I scraped using Python and BeautifulSoup from a basic Wikipedia page. Second, I called out to the OMDB - Open Movie Database - which is an online API that renders a wealth of attributes about films relative to the given title; by calling my movie titles aligned with the AFI list, I was able to pull a range of characteristics from things like IMDB rating to release date to runtime to plot to cast to awards won. Thus, utilizing those two techniques, I could access far more data than the public would render. 
+
+The process was fairly simple. Once determined what movies were valid from Wikipedia and cleaned that output, I took each movie title and looked it up in the OMDB API search to return a JSON object. From there, I could extract relevant metadata and compile it into DataFrames for export as CSVs and load it into SQLite databases. 
+
+The results existed in the dataset I generated. 30+ of the most popular films created in America now had new information not previously available in the public domain. This included factual news attributes as well as qualitative fields such as ratings based on critical or audience appeal. These results can provide insight into how we've perceived American filmmakers and ideas over time, although it's important to note that these results are biased under the guise of only watching AFI's list. Therefore, films created outside of English-speaking countries or films of genres not represented here may not exist here at all. 
+
+Ultimately, this project was a success in learning how to combine two seemingly disparate techniques: scraping and image enrichment to access a more statistics-based endeavor. The beauty of automation made it much easier to go off existing structures and merely query deeper to find relevant cultural trends among American films created over time. Goals were met in a translatable active learning environment, though solely applied to film study in this case. 
